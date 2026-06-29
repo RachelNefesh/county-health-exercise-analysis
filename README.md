@@ -1,6 +1,6 @@
 # Access to Exercise Opportunities and Health Outcomes
 
-A county-level econometrics project investigating one question: **Does access to
+A county-level econometrics project investigating one question: **does access to
 exercise opportunities reduce obesity rates, or is that relationship mostly
 explained by something else, like income?**
 
@@ -18,7 +18,7 @@ out-of-sample prediction).
   child poverty rate, and percent rural
 
 **A data-cleaning note worth flagging:** the raw file also contains 51 rows that
-aren't counties at all. They are state-level aggregates (one per state + DC),
+aren't counties at all. They're state-level aggregates (one per state + DC),
 identifiable because their FIPS code ends in `000`. I check for and remove these
 before any analysis, since mixing a state's summary number in with individual
 counties would quietly distort the results.
@@ -112,40 +112,3 @@ Run it top to bottom (**Kernel → Restart & Run All**) to reproduce everything.
 | `county_health_exercise_analysis.ipynb` | The full analysis, with code, charts, and write-up of each step |
 | `requirements.txt` | Python packages needed to run it |
 | `README.md` | This file |
-=======
-# county-health-exercise-analysis
-OLS regression analysis of exercise access and obesity rates across U.S. counties
-# Exercise Access and Obesity Rates Across U.S. Counties
-
-## Overview
-This project analyzes the relationship between access to exercise 
-opportunities and adult obesity rates across 3,100+ U.S. counties 
-using 2025 County Health Rankings data.
-
-## Research Question
-Does access to exercise opportunities reduce obesity rates, and does 
-this effect differ by income level?
-
-## Methods
-- Data cleaning and exploratory analysis in Python and Pandas
-- Three OLS regression models with robust standard errors to 
-  identify and control for omitted variable bias
-- Coefficient stability analysis across models
-- Geographic visualization using GeoPandas choropleth map
-- Predictive modeling with scikit-learn train/test split
-
-## Key Findings
-- Exercise access is negatively associated with obesity rates 
-  even after controlling for income, poverty, food environment, 
-  and rurality
-- Income is the dominant confounder — adding it reduced the 
-  exercise access coefficient by 64%
-- The effect of exercise access on obesity is more than twice 
-  as strong in high income counties versus low income counties, 
-  suggesting structural barriers limit utilization in poorer areas
-
-## Tools Used
-Python, Pandas, NumPy, statsmodels, scikit-learn, GeoPandas, Matplotlib, Seaborn
-
-# county-health-exercise-analysis
-# county-health-exercise-analysis
