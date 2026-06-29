@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Access to Exercise Opportunities and Health Outcomes
 
 A county-level econometrics project investigating one question: **Does access to
@@ -146,8 +145,7 @@ this effect differ by income level?
   suggesting structural barriers limit utilization in poorer areas
 
 ## Tools Used
-Python, Pandas, NumPy, statsmodels, scikit-learn, GeoPandas, 
-Matplotlib, Seaborn
->>>>>>> bed60468adb7e6b9be2e1e28354b0dda99c98069
-# county-health-exercise-analysi
-# county-health-exercise-analysi
+Python, Pandas, NumPy, statsmodels, scikit-learn, GeoPandas, Matplotlib, Seaborn
+
+# county-health-exercise-analysis
+# county-health-exercise-analysis
